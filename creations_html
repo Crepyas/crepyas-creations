@@ -1,0 +1,459 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="findOlyvianDate();startTime();">
+
+<div id=buttonOver>
+  <img src="https://i.imgur.com/i43dpJl.png" alt="Crepyas Logo">  
+</div>
+
+<div id="menu" class="column">
+  <h1 id="topTitl" class="titlBtn">Welcome to MERA</h1>
+  <button id="abtBtn" class="infoBtn">About</button>
+  <button id="mapBtn" class="infoBtn">Map</button>
+  <button id="parBtn" class="infoBtn">Pairings</button>
+  <h1 id="chrTtl" class="charBtn">Subject Index</h1>
+  <button id="olyvBtn" class="indxBtn">Olyvians</button>
+  <button id="dimeBtn" class="indxBtn">Dimensionals</button>
+  <button id="ntrlBtn" class="indxBtn">Naturals</button>
+  <button id="engmBtn" class="indxBtn">Enigmas</button>
+  <button id="termBtn" class="indxBtn">Terminated</button>
+  <button id="mackBtn" class="indxBtn">Elicia's</button>
+    
+  <section id=DateTime><div><h4>
+    <span id="olyvDate">41-00 Viorna 01</span><br>
+    <i>&#933;&#951;</i>:&nbsp;&nbsp;&nbsp;
+    &nbsp;<span id="Time">00:00:00</span><br>
+    Olyvia: <span id="olyvTime">00:00:00</span><br>
+    &copy;2022<sub><i>&#933;&#951;</i></sub> SPECTR Industries<br>
+    All Rights Reserved.
+  </h4></div></section>
+</div>
+
+  
+<div id="descScreen">
+  <div id="descContent">
+    <div id="exit" class="">Back</div>
+    <div id="lore" class="">Profile</div>
+    <div id="meta" class="">Notes</div>
+    <div id="profiler" class="">
+      <div id="refImg">
+        <img id="iMage" src="https://i.imgur.com/RiFRyic.jpg" alt=ReferenceImg>
+      </div>
+    </div>
+    <div id="name">Name Test</div>
+    <div id="loreDesc" class="">Filler Lore</div>
+    <div id="metaDesc" class="">Filler Notes</div>
+  </div>
+</div>
+  
+<div class="column" id="infoBox">
+   <span id="back"> &nbsp;[BACK]&nbsp;</span>
+  <div class="inform" id="About">
+    <h2>About</h2>
+    <p><b>Master Entity Recording Application</b>, or MERA for
+      short (named after my little sister), is a system of recording
+      major events in the lives of select people and other beings of
+      Olyvia--dubbed Entities. None of the Entities are chosen at
+      random. Each one pertain to the major Fates of our World, for
+      better or for worse. Some directly interact with the Fates while
+      others can indirectly change the Fates. All Entities must be
+      recorded to estimate the possible Fates that are to come,
+      whether that person still exists or not.
+    </p><br><br>
+    
+    <p>Sometimes an Entity strays to far from their course and leads
+      to Fates of death, destruction, and others of those nature. With
+      the help of <b>L.</b>, we can rewind the passage of Time and
+      correct any anomalies. These corrections create Time Splits where
+      those outcomes continue in a parallel universe. <b>L.</b> has
+      devised a hub where Time Splits are anchored to our Universe. If
+      Time Splits are not anchored, that Split and Ours will merge and
+      eventually collapse due to the inconsistencies of Nature, Time,
+      and Fates.
+    </p><br><br>
+      
+    <p>Along with the Time Splits, Leylines that cross the spans of
+      Olyvia have created other hubs that connect us to worlds much
+      different from Olyvia. The mystical energy caused by the Leylines
+      become very volatile in such high concentrations, altering
+      space-time and creating passages across dimensions. Hubs are the
+      entry and exit points of these passages.
+    </p><br>
+    <p>These passages have allowed travel of beings and objects from
+      our world and theirs. The beings from other worlds that have
+      seeped into Olyvia are known as "Dimensionals". They are
+      sometimes affected by Olyvia's mana, but such affections are minute
+      and have typical allows the traveller to be adjusted to our Rules
+      of Natures. A subset of Dimensionals have been interacted with in
+      their own worlds. These beings I call "Naturals", as they have not
+      been affected by Olyvia's mana.
+    </p><br>
+    <p>Inversely, sometimes the mana of Olyvia to seep into these other
+      worlds and create anomalies. These anomalies, classified as
+      "Enigmas", create alterations in these worlds' Time Flows. Enigmas
+      are treated as equals to Time Splits. We must keep a careful watch
+      of Enigmas to prevent potential collapses of other dimensions.
+    </p><br><br>
+    
+    <p style="text-align: right;">-Bill T. Crepyas</p>
+  </div>
+  <div class="inform" id="Map">
+    <h2>Map</h2>
+  </div>
+  <div class="inform chars" id="Pairings">
+    <h2>Pairings</h2>
+  </div>
+  <div class="inform chars" id="Olyvians">
+    <h2>Olyvians</h2>
+    <button class="olyv col-c" id=SI00> <img src="https://i.imgur.com/QXuRhjt.png"
+      alt=SI00> <figcaption>Benny</figcaption></button>
+    <button class="olyv col-j" id=OG00> <img src="https://i.imgur.com/diHHs7Q.png"
+      alt=OG00> <figcaption>Bill</figcaption></button>
+    <button class="olyv col-b" id=OG01> <img src="https://i.imgur.com/RPnTkML.png"
+      alt=OG01> <figcaption>Elizabeth</figcaption></button>
+    <button class="olyv col-g" id=OG02> <img src="https://i.imgur.com/I5Qx6an.png"
+      alt=OG02> <figcaption>Scarlett</figcaption></button>
+    <button class="olyv col-f" id=OG03> <img src="https://i.imgur.com/dZ7WxLn.png"
+      alt=OG03> <figcaption>Sunset</figcaption></button>
+    <button class="olyv col-k" id=OG04> <img src="https://i.imgur.com/WzfIyq0.png"
+      alt=OG04> <figcaption>Ten</figcaption></button>
+    <button class="olyv col-j" id=OG05> <img src="https://i.imgur.com/EvL2TUX.png"
+      alt=OG05> <figcaption>Jay</figcaption></button>
+    <button class="olyv col-e" id=OG0B> <img src="https://i.imgur.com/B4ZuunJ.png"
+      alt=OG0B> <figcaption>Lana</figcaption></button>
+    <!-- Sugar, id: OG0D -->
+    <button class="olyv col-c" id=OG0H> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG0H> <figcaption>Ellys</figcaption></button>
+    <button class="olyv col-b" id=OG0I> <img src="https://i.imgur.com/8rYJE0H.png"
+      alt=OG0I> <figcaption>Lillian</figcaption></button>
+    <button class="olyv col-c" id=OG0J> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG0J> <figcaption>Arachnophobia</figcaption></button>
+    <button class="olyv col-c" id=OG10> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG10> <figcaption>Tic-Toc</figcaption></button>
+    <button class="olyv col-z" id=OG11> <img src="https://i.imgur.com/l2XNC4I.png"
+      alt=OG11> <figcaption>Corrine</figcaption></button>
+    <button class="olyv col-d" id=OG12> <img src="https://i.imgur.com/CJSCID0.png"
+      alt=OG12> <figcaption>Lazarus</figcaption></button>
+    <button class="olyv col-z" id=OG13> <img src="https://i.imgur.com/bMSLrNZ.png"
+      alt=OG13> <figcaption>Maurus</figcaption></button>
+    <button class="olyv col-f" id=OG14> <img src="https://i.imgur.com/9r9Zqxy.png"
+      alt=OG14> <figcaption>Wail</figcaption></button>
+    <button class="olyv col-j" id=OG15> <img src="https://i.imgur.com/DzEFWgW.png"
+      alt=OG15> <figcaption>Amaryllis</figcaption></button>
+    <button class="olyv col-k" id=OG1B> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG1B> <figcaption>Grant</figcaption></button>
+    <button class="olyv col-i" id=OG1C> <img src="https://i.imgur.com/704jADi.png"
+      alt=OG1C> <figcaption>Jenny</figcaption></button>
+    <button class="olyv col-a" id=OG1E> <img src="https://i.imgur.com/6HpyfiN.png"
+      alt=OG1E> <figcaption>Storm</figcaption></button>
+    <button class="olyv col-a" id=OG1G> <img src="https://i.imgur.com/md6w8jh.png"
+      alt=OG1G> <figcaption>Mute</figcaption></button>
+    <button class="olyv col-f" id=OG1H> <img src="https://i.imgur.com/F3VOYon.png"
+      alt=OG1H> <figcaption>Alissa</figcaption></button>
+    <button class="olyv col-d" id=OG1I> <img src="https://i.imgur.com/bL57pGR.png"
+      alt=OG1I> <figcaption>Alice</figcaption></button>
+    <button class="olyv col-g" id=OG1J> <img src="https://i.imgur.com/2RYYWBQ.png"
+      alt=OG1J> <figcaption>Felicity</figcaption></button>
+    <button class="olyv col-d" id=OG20> <img src="https://i.imgur.com/A2V3Whj.png"
+      alt=OG20> <figcaption>Sunny</figcaption></button>
+    <button class="olyv col-i" id=OG22> <img src="https://i.imgur.com/7hXqohG.png"
+      alt=OG22> <figcaption>Wulfric</figcaption></button>
+    <button class="olyv col-c" id=OG25> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG25> <figcaption>Dreithyr</figcaption></button>
+    <button class="olyv col-j" id=OG2A> <img src="https://i.imgur.com/wgjYjgW.png"
+      alt=OG2A> <figcaption>Leisl</figcaption></button>
+    <button class="olyv col-b" id=OG21> <img src="https://i.imgur.com/us1oYOl.png"
+      alt=OG2B> <figcaption>Charles</figcaption></button>
+    <button class="olyv col-d" id=OG2C> <img src="https://i.imgur.com/yHJZb3G.png"
+      alt=OG2C> <figcaption>Holly</figcaption></button>
+    <button class="olyv col-z" id=OG2D> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG2D> <figcaption>Douglas</figcaption></button>
+    <button class="olyv col-a" id=OG2E> <img src="https://i.imgur.com/NAhEhcR.png"
+      alt=OG2E> <figcaption>Osmund</figcaption></button>
+    <button class="olyv col-d" id=OG2H> <img src="https://i.imgur.com/hYG0NHd.png"
+      alt=OG2H> <figcaption>Aden</figcaption></button>
+    <button class="olyv col-a" id=OG2I> <img src="https://i.imgur.com/jXLp0E0.png"
+      alt=OG2I> <figcaption>Avery</figcaption></button>
+    <button class="olyv col-b" id=OG2J> <img src="https://i.imgur.com/MZLxZ7t.png"
+      alt=OG2J> <figcaption>Roosevelt</figcaption></button>
+    <button class="olyv col-e" id=OG31> <img src="https://i.imgur.com/HM15ev8.png"
+      alt=OG31> <figcaption>Adelaide</figcaption></button>
+    <button class="olyv col-a" id=OG32> <img src="https://i.imgur.com/B9Cep9g.png"
+      alt=OG32> <figcaption>Im</figcaption></button>
+    <button class="olyv col-k" id=OG33> <img src="https://i.imgur.com/7iPeHjX.png"
+      alt=OG33> <figcaption>Cyan</figcaption></button>
+    <button class="olyv col-d" id=OG34> <img src="https://i.imgur.com/DdeVdR4.png"
+      alt=OG34> <figcaption>Penelope</figcaption></button>
+    <button class="olyv col-j" id=OG35> <img src="https://i.imgur.com/m1eNa1C.png"
+      alt=OG35> <figcaption>Chardonnay</figcaption></button>
+    <button class="olyv col-d" id=OG3D> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG3D> <figcaption>Akari</figcaption></button>
+    <button class="olyv col-e" id=OG3E> <img src="https://i.imgur.com/YND1hai.png"
+      alt=OG3E> <figcaption>Karmen</figcaption></button>
+    <button class="olyv col-e" id=OG3F> <img src="https://i.imgur.com/89pwkN9.png"
+      alt=OG3F> <figcaption>Mera</figcaption></button>
+  </div>
+  <div class="inform chars" id="Dimensionals">
+    <h2>Dimensionals</h2>
+    <button class="olyv col-z" id=OG0A> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG0A> <figcaption>Astor</figcaption></button>
+    <button class="olyv col-c" id=OG0C> <img src="https://i.imgur.com/dUvw30B.png"
+      alt=OG0C> <figcaption>Promise</figcaption></button>
+    <button class="olyv col-h" id=OG0E> <img src="https://i.imgur.com/VDeAric.png"
+      alt=OG0E> <figcaption>Pyra</figcaption></button>
+    <!-- Poison, id: OG0F -->
+    <!-- Maeve, id: OG0G -->
+    <!-- Ebony, id: OG1D -->
+    <button class="olyv col-b" id=OG1F> <img src="https://i.imgur.com/DmnzBql.png"
+      alt=OG1F> <figcaption>Toxin</figcaption></button>
+    <button class="olyv col-c" id=OG21> <img src="https://i.imgur.com/Afu8Y6z.png"
+      alt=OG21> <figcaption>Tsuretsu</figcaption></button>
+    <button class="olyv col-h" id=OG23> <img src="https://i.imgur.com/IVMO6AM.png"
+      alt=OG23> <figcaption>Hara</figcaption></button>
+    <button class="olyv col-i" id=OG24> <img src="https://i.imgur.com/Qa8a4NH.png"
+      alt=OG24> <figcaption>Rita</figcaption></button>
+    <button class="olyv col-z" id=OG2F> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG2F> <figcaption>Agora</figcaption></button>
+    <button class="olyv col-g" id=OG2G> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG2G> <figcaption>Montés</figcaption></button>
+    <button class="olyv col-e" id=OG30> <img src="https://i.imgur.com/6Xuwou6.png"
+      alt=OG30> <figcaption>Bandai</figcaption></button>
+    <button class="olyv col-h" id=OG3A> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=OG3A> <figcaption>Cosette</figcaption></button>
+    <button class="olyv col-g" id=OG3B> <img src="https://i.imgur.com/0tHW8Kd.png"
+      alt=OG3B> <figcaption>Amber</figcaption></button>
+    <button class="olyv col-a" id=OG3C> <img src="https://i.imgur.com/a6tsH6p.png"
+      alt=OG3C> <figcaption>Arael</figcaption></button>
+  </div>
+  <div class="inform chars" id="Naturals">
+    <h2>Naturals</h2>
+
+  </div>
+  <div class="inform chars" id="Enigmas">
+    <h2>Enigmas</h2>
+    <button class="dime col-b" id=MD00> <img src="https://i.imgur.com/g4pABMM.png"
+      alt=MD00> <figcaption>Bulba</figcaption> </button>
+    <button class="dime col-f" id=MD01> <img src="https://i.imgur.com/1gF3Zjh.png"
+      alt=MD01> <figcaption>Miyako</figcaption> </button>
+    <button class="dime col-z" id=MD02> <img src="https://i.imgur.com/WQoHOyp.png"
+      alt=MD02> <figcaption>Shigatsu</figcaption> </button>
+    <button class="dime col-i" id=MD03> <img src="https://i.imgur.com/k6c2XzD.png"
+      alt=MD03> <figcaption>Darkling</figcaption> </button>
+    <button class="dime col-i" id=MD04> <img src="https://i.imgur.com/4lCMtFq.png"
+      alt=MD04> <figcaption>Darkling</figcaption> </button>
+    <button class="dime col-d" id=MD05> <img src="https://i.imgur.com/sKxgl3U.png"
+      alt=MD05> <figcaption>Tiko</figcaption> </button>
+    <button class="dime col-f" id=MD0A> <img src="https://i.imgur.com/woa0rLE.png"
+      alt=MD0A> <figcaption>Anima</figcaption> </button>
+    <button class="dime col-z" id=MD0B> <img src="https://i.imgur.com/9QVqE1x.png"
+      alt=MD0B> <figcaption>Blake</figcaption> </button>
+    <button class="dime col-c" id=MD0C> <img src="https://i.imgur.com/MXUA6bp.png"
+      alt=MD0C> <figcaption>Cassidy</figcaption> </button>
+    <button class="dime col-c" id=MD0D> <img src="https://i.imgur.com/wQgeE4G.png"
+      alt=MD0D> <figcaption>Marshall</figcaption> </button>
+    <button class="dime col-i" id=MD0E> <img src="https://i.imgur.com/IEL8CCZ.png"
+      alt=MD0E> <figcaption>Chimera</figcaption> </button>
+    <button class="dime col-z" id=MD0F> <img src="https://i.imgur.com/1sVGFHi.png"
+      alt=MD0F> <figcaption>Kagura</figcaption> </button>
+    <button class="dime col-b" id=MD0G> <img src="https://i.imgur.com/O23I9BY.png"
+      alt=MD0G> <figcaption>Shem</figcaption> </button>
+    <button class="dime col-b" id=MD0H> <img src="https://i.imgur.com/hBX6ayT.png"
+      alt=MD0H> <figcaption>Phina</figcaption> </button>
+    <button class="dime col-c" id=MD0I> <img src="https://i.imgur.com/TB4OdtF.png"
+      alt=MD0I> <figcaption>Emii</figcaption> </button>
+    <button class="dime col-f" id=MD0J> <img src="https://i.imgur.com/uptCLlw.png"
+      alt=MD0J> <figcaption>Gianna</figcaption> </button>
+    <button class="dime col-a" id=MD10> <img src="https://i.imgur.com/0gtqwgV.png"
+      alt=MD10> <figcaption>Jai</figcaption> </button>
+    <button class="dime col-i" id=MD11> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=MD11> <figcaption>Lyndon</figcaption> </button>
+    <button class="dime col-j" id=MD12> <img src="https://i.imgur.com/tgqNtUl.png"
+      alt=MD12> <figcaption>Dusky</figcaption> </button>
+    <button class="dime col-i" id=MD13> <img src="https://i.imgur.com/Ifc42yJ.png"
+      alt=MD13> <figcaption>Mortimer</figcaption> </button>
+    <button class="dime col-k" id=MD14> <img src="https://i.imgur.com/EdPu2CV.png"
+      alt=MD14> <figcaption>Valkyrie</figcaption> </button>
+    <button class="dime col-f" id=MD15> <img src="https://i.imgur.com/SOH1Jmm.png"
+      alt=MD15> <figcaption>William</figcaption> </button>
+    <button class="dime col-j" id=MD1A> <img src="https://i.imgur.com/AEzobv9.png"
+      alt=MD1A> <figcaption>Ennéa</figcaption> </button>
+    <button class="dime col-c" id=MD1B> <img src="https://i.imgur.com/lT6BQla.jpg"
+      alt=MD1B> <figcaption>Aoringo</figcaption> </button>
+  </div>
+  <div class="inform chars" id="Terminated">
+    <h2>Terminated</h2>
+    <button class="term col-f" id=PM00> <img src="https://i.imgur.com/7ygOuI0.png"
+      alt=PM00> <figcaption>Olivia</figcaption> </button>
+    <button class="term col-a" id=PM0D> <img src="https://i.imgur.com/TABhoET.png"
+      alt=PM0D> <figcaption>Layla</figcaption> </button>
+    <button class="term col-i" id=PM0E> <img src="https://i.imgur.com/8rTpJEi.png"
+      alt=PM0E> <figcaption>Zuzu</figcaption> </button>
+    <button class="term col-f" id=PM0F> <img src="https://i.imgur.com/f0pEHLD.png"
+      alt=PM0F> <figcaption>Mindy</figcaption> </button>
+    <button class="term col-b" id=PM0G> <img src="https://i.imgur.com/w6xJcJ3.png"
+      alt=PM0G> <figcaption>Poison</figcaption></button>
+    <button class="term col-i" id=PM0H> <img src="https://i.imgur.com/FmCi9Dv.png"
+      alt=PM0H> <figcaption>Shantae</figcaption></button>
+    <button class="term col-b" id=PM0I> <img src="https://i.imgur.com/lpp9Zt6.png"
+      alt=PM0I> <figcaption>Maeve</figcaption> </button>
+    <button class="term col-z" id=PM0J> <img src="https://i.imgur.com/L5dKcBW.png"
+      alt=PM0J> <figcaption>Elicia [Fox]</figcaption> </button>
+    <button class="term col-z" id=PM10> <img src="https://i.imgur.com/0tMAE8J.png"
+      alt=OG1D> <figcaption>Ebony</figcaption></button>
+    <button class="term col-i" id=PM11> <img src="https://i.imgur.com/5LJS77u.jpg"
+      alt=PM11> <figcaption>Benni</figcaption> </button>
+    <button class="term col-c" id=PM12> <img src="https://i.imgur.com/llYFUss.png"
+      alt=PM12> <figcaption>Kelly</figcaption> </button>
+    <button class="term col-c" id=PM14> <img src="https://i.imgur.com/XwYYZlm.jpg"
+      alt=PM14> <figcaption>Candice</figcaption> </button>
+  </div>
+  <div class="inform chars" id="Elicia">
+    <h2>Elicia's</h2>
+    <button class="term col-a" id=DJ00> <img src="https://i.imgur.com/mwbF3DC.png"
+      alt=ZZZZ> <figcaption>5-Volt</figcaption> </button>
+    <button class="term col-a" id=DJ01> <img src="https://i.imgur.com/PzpGNqT.png"
+      alt=ZZZZ> <figcaption>Amy</figcaption> </button>
+    <button class="term col-a" id=DJ02> <img src="https://i.imgur.com/YNDhYGN.png"
+      alt=ZZZZ> <figcaption>Ann</figcaption> </button>
+    <button class="term col-a" id=DJ03> <img src="https://i.imgur.com/T4rO8tu.png"
+      alt=ZZZZ> <figcaption>Aqua</figcaption> </button>
+    <button class="term col-a" id=DJ04> <img src="https://i.imgur.com/857ohAa.png"
+      alt=ZZZZ> <figcaption>Asuka</figcaption> </button>
+    <button class="term col-a" id=DJ05> <img src="https://i.imgur.com/Dvn1qpn.png"
+      alt=ZZZZ> <figcaption>Blanc</figcaption> </button>
+    <button class="term col-a" id=DJ0A> <img src="https://i.imgur.com/mNxdVVQ.png"
+      alt=ZZZZ> <figcaption>Bowsette</figcaption> </button>
+    <button class="term col-a" id=DJ0B> <img src="https://i.imgur.com/DDzp8rH.png"
+      alt=ZZZZ> <figcaption>Brendan</figcaption> </button>
+    <button class="term col-a" id=DJ0C> <img src="https://i.imgur.com/ZM6x1Rk.png"
+      alt=ZZZZ> <figcaption>Cassius</figcaption> </button>
+    <button class="term col-a" id=DJ0D> <img src="https://i.imgur.com/VRZIAcQ.png"
+      alt=ZZZZ> <figcaption>Cherry</figcaption> </button>
+    <button class="term col-a" id=DJ0E> <img src="https://i.imgur.com/tbl1v3n.png"
+      alt=ZZZZ> <figcaption>Chika</figcaption> </button>
+    <button class="term col-a" id=DJ0F> <img src="https://i.imgur.com/XpydtAd.png"
+      alt=ZZZZ> <figcaption>Chloe</figcaption> </button>
+    <button class="term col-a" id=DJ0G> <img src="https://i.imgur.com/J5WGfFY.png"
+      alt=ZZZZ> <figcaption>Clorica</figcaption> </button>
+    <button class="term col-a" id=DJ0H> <img src="https://i.imgur.com/uUZn390.png"
+      alt=ZZZZ> <figcaption>Cream</figcaption> </button>
+    <button class="term col-a" id=DJ0I> <img src="https://i.imgur.com/m1eEgUQ.png"
+      alt=ZZZZ> <figcaption>Croire</figcaption> </button>
+    <button class="term col-a" id=DJ0J> <img src="https://i.imgur.com/RMYFFP0.png"
+      alt=ZZZZ> <figcaption>Cryillie</figcaption> </button>
+    <button class="term col-a" id=DJ10> <img src="https://i.imgur.com/XRpmhXU.png"
+      alt=ZZZZ> <figcaption>Daisy</figcaption> </button>
+    <button class="term col-a" id=DJ11> <img src="https://i.imgur.com/thvtc0k.png"
+      alt=ZZZZ> <figcaption>DeLorean</figcaption> </button>
+    <button class="term col-a" id=DJ12> <img src="https://i.imgur.com/FC1HbMs.png"
+      alt=ZZZZ> <figcaption>Elicia</figcaption> </button>
+    <button class="term col-a" id=DJ13> <img src="https://i.imgur.com/FC1HbMs.png"
+      alt=ZZZZ> <figcaption>Etna</figcaption> </button>
+    <button class="term col-a" id=DJ14> <img src="https://i.imgur.com/A71jmZL.png"
+      alt=ZZZZ> <figcaption>Hara</figcaption> </button>
+    <button class="term col-a" id=DJ15> <img src="https://i.imgur.com/VmShtlu.png"
+      alt=ZZZZ> <figcaption>Hibari</figcaption> </button>
+    <button class="term col-a" id=DJ1A> <img src="https://i.imgur.com/1YGw889.png"
+      alt=ZZZZ> <figcaption>Hilda</figcaption> </button>
+    <button class="term col-a" id=DJ1B> <img src="https://i.imgur.com/IJ5sCpS.png"
+      alt=ZZZZ> <figcaption>Homura</figcaption> </button>
+    <button class="term col-a" id=DJ1C> <img src="https://i.imgur.com/eqFjtFA.png"
+      alt=ZZZZ> <figcaption>Jenny</figcaption> </button>
+    <button class="term col-a" id=DJ1D> <img src="https://i.imgur.com/j1dEFUC.png"
+      alt=ZZZZ> <figcaption>Katsuragi</figcaption> </button>
+    <button class="term col-a" id=DJ1E> <img src="https://i.imgur.com/LaqGl8w.png"
+      alt=ZZZZ> <figcaption>Lana</figcaption> </button>
+    <button class="term col-a" id=DJ1F> <img src="https://i.imgur.com/uNLigMm.png"
+      alt=ZZZZ> <figcaption>Lara</figcaption> </button>
+    <button class="term col-a" id=DJ1G> <img src="https://i.imgur.com/iEDM3ac.png"
+      alt=ZZZZ> <figcaption>Lillian</figcaption> </button>
+    <button class="term col-a" id=DJ1H> <img src="https://i.imgur.com/SlDrvWm.png"
+      alt=ZZZZ> <figcaption>Lime</figcaption> </button>
+    <button class="term col-a" id=DJ1I> <img src="https://i.imgur.com/EkFPQZZ.png"
+      alt=ZZZZ> <figcaption>Luka</figcaption> </button>
+    <button class="term col-a" id=DJ1J> <img src="https://i.imgur.com/FyTujrc.png"
+      alt=ZZZZ> <figcaption>Luna</figcaption> </button>
+    <button class="term col-a" id=DJ20> <img src="https://i.imgur.com/3J1KoPe.png"
+      alt=ZZZZ> <figcaption>Mai</figcaption> </button>
+    <button class="term col-a" id=DJ21> <img src="https://i.imgur.com/baoFvLu.png"
+      alt=ZZZZ> <figcaption>Maple</figcaption> </button>
+    <button class="term col-a" id=DJ22> <img src="https://i.imgur.com/pfHNc1g.png"
+      alt=ZZZZ> <figcaption>Melina</figcaption> </button>
+    <button class="term col-a" id=DJ23> <img src="https://i.imgur.com/PkWghzT.png"
+      alt=ZZZZ> <figcaption>Melony</figcaption> </button>
+    <button class="term col-a" id=DJ24> <img src="https://i.imgur.com/nKT2B4m.png"
+      alt=ZZZZ> <figcaption>Mia</figcaption> </button>
+    <button class="term col-a" id=DJ25> <img src="https://i.imgur.com/QZkz8Xd.png"
+      alt=ZZZZ> <figcaption>Midna</figcaption> </button>
+    <button class="term col-a" id=DJ2A> <img src="https://i.imgur.com/xACYVRA.png"
+      alt=ZZZZ> <figcaption>Mina</figcaption> </button>
+    <button class="term col-a" id=DJ2B> <img src="https://i.imgur.com/JxW3Wjb.png"
+      alt=ZZZZ> <figcaption>Momoko</figcaption> </button>
+    <button class="term col-a" id=DJ2C> <img src="https://i.imgur.com/diSXJlm.png"
+      alt=ZZZZ> <figcaption>Mona</figcaption> </button>
+    <button class="term col-a" id=DJ2D> <img src="https://i.imgur.com/kjLOxeS.png"
+      alt=ZZZZ> <figcaption>Nami</figcaption> </button>
+    <button class="term col-a" id=DJ2E> <img src="https://i.imgur.com/yoXehfN.png"
+      alt=ZZZZ> <figcaption>Nana</figcaption> </button>
+    <button class="term col-a" id=DJ2F> <img src="https://i.imgur.com/5OT2wBW.png"
+      alt=ZZZZ> <figcaption>Neo</figcaption> </button>
+    <button class="term col-a" id=DJ2G> <img src="https://i.imgur.com/BnxPKMG.png"
+      alt=ZZZZ> <figcaption>Nepgear</figcaption> </button>
+    <button class="term col-a" id=DJ2H> <img src="https://i.imgur.com/of9vzZg.png"
+      alt=ZZZZ> <figcaption>Neptune</figcaption> </button>
+    <button class="term col-a" id=DJ2I> <img src="https://i.imgur.com/YRkDIJr.png"
+      alt=ZZZZ> <figcaption>Nia</figcaption> </button>
+    <button class="term col-a" id=DJ2J> <img src="https://i.imgur.com/mpOO2Fd.png"
+      alt=ZZZZ> <figcaption>Niki</figcaption> </button>
+    <button class="term col-a" id=DJ30> <img src="https://i.imgur.com/IBmbjcP.png"
+      alt=ZZZZ> <figcaption>Nina</figcaption> </button>
+    <button class="term col-a" id=DJ31> <img src="https://i.imgur.com/vre75Tj.png"
+      alt=ZZZZ> <figcaption>Nowi</figcaption> </button>
+    <button class="term col-a" id=DJ32> <img src="https://i.imgur.com/cDwUNDD.png"
+      alt=ZZZZ> <figcaption>Olivia</figcaption> </button>
+    <button class="term col-a" id=DJ33> <img src="https://i.imgur.com/C3CvYnK.jpg"
+      alt=ZZZZ> <figcaption>Pan</figcaption> </button>
+    <button class="term col-a" id=DJ34> <img src="https://i.imgur.com/oE2e8tD.jpg"
+      alt=ZZZZ> <figcaption>Pearl</figcaption> </button>
+    <button class="term col-a" id=DJ35> <img src="https://i.imgur.com/TqKbXEe.png"
+      alt=ZZZZ> <figcaption>Pyra</figcaption> </button>
+    <button class="term col-a" id=DJ3A> <img src="https://i.imgur.com/0LxIMkm.png"
+      alt=ZZZZ> <figcaption>Rachel</figcaption> </button>
+    <button class="term col-a" id=DJ3B> <img src="https://i.imgur.com/fcj52IN.png"
+      alt=ZZZZ> <figcaption>Rena</figcaption> </button>
+    <button class="term col-a" id=DJ3C> <img src="https://i.imgur.com/BbxqyAF.png"
+      alt=ZZZZ> <figcaption>Renee</figcaption> </button>
+    <button class="term col-a" id=DJ3D> <img src="https://i.imgur.com/rIfdJEa.png"
+      alt=ZZZZ> <figcaption>Renee</figcaption> </button>
+    <button class="term col-a" id=DJ3E> <img src="https://i.imgur.com/6yfBHYg.png"
+      alt=ZZZZ> <figcaption>Rin</figcaption> </button>
+    <button class="term col-a" id=DJ3F> <img src="https://i.imgur.com/G4LFQ6V.png"
+      alt=ZZZZ> <figcaption>Risky</figcaption> </button>
+    <button class="term col-a" id=DJ3G> <img src="https://i.imgur.com/lZR9SXo.png"
+      alt=ZZZZ> <figcaption>Roll</figcaption> </button>
+    <button class="term col-a" id=DJ3H> <img src="https://i.imgur.com/W7pUUQJ.png"
+      alt=ZZZZ> <figcaption>Samus</figcaption> </button>
+    <button class="term col-a" id=DJ3I> <img src="https://i.imgur.com/X4LosNL.png"
+      alt=ZZZZ> <figcaption>Spooky</figcaption> </button>
+    <button class="term col-a" id=DJ3J> <img src="https://i.imgur.com/t3942Kl.png"
+      alt=ZZZZ> <figcaption>Teto</figcaption> </button>
+    <button class="term col-a" id=DJ40> <img src="https://i.imgur.com/DV3Lr6q.png"
+      alt=ZZZZ> <figcaption>Tifa</figcaption> </button>
+    <button class="term col-a" id=DJ41> <img src="https://i.imgur.com/iZF63lZ.png"
+      alt=ZZZZ> <figcaption>Tuki</figcaption> </button>
+    <button class="term col-a" id=DJ42> <img src="https://i.imgur.com/zdRWyRr.png"
+      alt=ZZZZ> <figcaption>Una</figcaption> </button>
+    <button class="term col-a" id=DJ43> <img src="https://i.imgur.com/8quYQCd.png"
+      alt=ZZZZ> <figcaption>Usalia</figcaption> </button>
+    <button class="term col-a" id=DJ44> <img src="https://i.imgur.com/e8fzSHc.png"
+      alt=ZZZZ> <figcaption>Velvet</figcaption> </button>
+    <button class="term col-a" id=DJ45> <img src="https://i.imgur.com/qV41H63.png"
+      alt=ZZZZ> <figcaption>Yuna</figcaption> </button>
+  </div>
+</div>
+</body>
+</html>
